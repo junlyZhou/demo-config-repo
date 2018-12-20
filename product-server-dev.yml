@@ -1,4 +1,9 @@
 spring:
+  rabbitmq:
+    host: http:192.168.136.139
+    port: 5672
+    username: guest
+    password: guest
   application:
     name: product-server
   #数据库配置实现自动配置数据元
