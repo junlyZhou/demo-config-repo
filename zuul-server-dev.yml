@@ -11,3 +11,11 @@ spring:
 server:
   port: 8088
 env: dev
+#zuul 配置完成后，会自动的路由注册中心所有的路径，默认路径格式为： 
+# zuul 的ip 地址+端口+ 服务的名称 + 服务的访问具体路径
+zuul:
+  routes:
+    #改变默认路径，自定义路径；将 服务product-server的路径改变为 : zuul的ip + /product + 服务具体路径的方式
+    myProduct:
+      path: /product/**
+      serviceId: product-server
