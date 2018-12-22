@@ -7,3 +7,5 @@
 
 修改配置之后必须访问下面网址刷新配置（刷新后配置才能生效）/actuator/bus-refresh：
 http://127.0.0.1:8085/actuator/bus-refresh
+
+实现动态配置需要则服务的方法或类上使用： @RefreshScope 这个注解；很重要；用来刷新配置文件的！
