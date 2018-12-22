@@ -19,3 +19,7 @@ zuul:
     myProduct:
       path: /product/**
       serviceId: product-server
+#自定义路由的简洁写法
+#zuul:
+#  routes: 
+#    product-server: product
