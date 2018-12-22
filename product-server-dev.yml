@@ -6,6 +6,8 @@ spring:
     password: guest
   application:
     name: product-server
+  redis:
+    host: 192.168.136.139
   #数据库配置实现自动配置数据元
   #自动配置的包(自动配置的动作都在这里)：spring-boot-autoconfigure-2.0.2.RELEASE.jar
   #实现数据源自动配置的类： DataSourceProperties.class
